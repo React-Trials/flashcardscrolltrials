@@ -25,7 +25,7 @@ function App() {
         </p>
         
         <div sx={{width: "600px"}}>
-          <Carousel swipe={true}
+          <Carousel
                     autoPlay={false}
                     animation="slide"
                     height={"300px"}
