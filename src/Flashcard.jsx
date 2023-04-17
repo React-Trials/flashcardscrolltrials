@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 import { useAppState } from '../../overmind'; */
 
 
-function Flashcard({flashcard, allFlashcardsList, setAllFlashcards, activeCard, currentCarouselIndex, setActiveHeight, idx, flashcards}) {
+function Flashcard({flashcard}) {
 
     // get user details from overmind state
     const [height, setHeight] = useState('auto')
@@ -56,7 +56,7 @@ function Flashcard({flashcard, allFlashcardsList, setAllFlashcards, activeCard, 
 
     useLayoutEffect(() => {
         setMaxHeight();
-    }, [flashcard, flashcards])
+    }, [flashcard])
 
 
     return (
